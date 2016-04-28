@@ -37,7 +37,13 @@ public func PerfectServerModuleInit() {
 
 		return TTHandler()
 	}
-
+    
+    PageHandlerRegistry.addPageHandler("Hello") {
+        (r:WebResponse) -> PageHandler in
+        
+        return HelloHandler()
+    }
+    
 	// Create our SQLite tracking database.
 	do {
 		let sqlite = try SQLite(TTHandler.trackerDbPath)
@@ -46,6 +52,15 @@ public func PerfectServerModuleInit() {
 		print("Failure creating tracker database at " + TTHandler.trackerDbPath)
 	}
 }
+
+class HelloHandler: PageHandler {
+    
+    func valuesForResponse(context: MustacheEvaluationContext, collector: MustacheEvaluationOutputCollector) throws -> MustacheEvaluationContext.MapType {
+        let val:MustacheEvaluationContext.MapType = ["hello":"hello my pretty"]
+        return val
+    }
+}
+
 
 // Handler class
 // When referenced in a mustache template, this class will be instantiated to handle the request

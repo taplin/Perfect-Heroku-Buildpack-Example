@@ -17,6 +17,7 @@ all: $(TARGET)
 install:
 	mv $(TARGET).so ../PerfectLibraries
 	cp TapTracker.mustache ../webroot
+	cp sayhello.mustache ../webroot
 
 modulecache:
 	@mkdir -p $(MODULE_CACHE_PATH)

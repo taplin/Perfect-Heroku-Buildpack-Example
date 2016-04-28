@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		307D62FB1CD266DA00BE1628 /* sayhello.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 307D62FA1CD266DA00BE1628 /* sayhello.mustache */; };
-		307D62FC1CD2671300BE1628 /* sayhello.mustache in CopyFiles */ = {isa = PBXBuildFile; fileRef = 307D62FA1CD266DA00BE1628 /* sayhello.mustache */; };
+		307D62FE1CD2696A00BE1628 /* sayhello.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 307D62FD1CD2696A00BE1628 /* sayhello.mustache */; };
 		F84242451BD973C1001EFF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84242441BD973C1001EFF66 /* AppDelegate.swift */; };
 		F84242471BD973C1001EFF66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84242461BD973C1001EFF66 /* ViewController.swift */; };
 		F842424A1BD973C1001EFF66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84242481BD973C1001EFF66 /* Main.storyboard */; };
@@ -32,7 +31,6 @@
 			dstPath = webroot;
 			dstSubfolderSpec = 16;
 			files = (
-				307D62FC1CD2671300BE1628 /* sayhello.mustache in CopyFiles */,
 				F878F8571BE3F451008B4F35 /* index.html in CopyFiles */,
 				F85FB11D1BDFCDE200DABFA8 /* TapTracker.mustache in CopyFiles */,
 			);
@@ -41,7 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		307D62FA1CD266DA00BE1628 /* sayhello.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sayhello.mustache; sourceTree = "<group>"; };
+		307D62FD1CD2696A00BE1628 /* sayhello.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sayhello.mustache; sourceTree = "<group>"; };
 		F84242411BD973C1001EFF66 /* Tap Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84242441BD973C1001EFF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F84242461BD973C1001EFF66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,9 +116,9 @@
 		F842425A1BD97409001EFF66 /* Tap Tracker Server */ = {
 			isa = PBXGroup;
 			children = (
+				307D62FD1CD2696A00BE1628 /* sayhello.mustache */,
 				F8E752D91BDA6B5400BFC36A /* TTHandlers.swift */,
 				F85FB11B1BDFCD5E00DABFA8 /* TapTracker.mustache */,
-				307D62FA1CD266DA00BE1628 /* sayhello.mustache */,
 				F842425B1BD97409001EFF66 /* Tap Tracker Server.h */,
 				F842425D1BD97409001EFF66 /* Info.plist */,
 				F878F8551BE3F43A008B4F35 /* index.html */,
@@ -244,7 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307D62FB1CD266DA00BE1628 /* sayhello.mustache in Resources */,
+				307D62FE1CD2696A00BE1628 /* sayhello.mustache in Resources */,
 				F878F8561BE3F440008B4F35 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
